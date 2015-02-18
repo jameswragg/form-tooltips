@@ -1,4 +1,4 @@
-$highlight = #e4f7f9 !default;
+$highlight: #e4f7f9 !default;
 
 .tooltip {
 	display: block;
@@ -13,7 +13,7 @@ $highlight = #e4f7f9 !default;
 	z-index: 500;
 	border-radius: 4px;
 	pointer-events: none;
-} 
+}
 .js .tooltip {
 	position: absolute;
 	width: 300px;
@@ -36,6 +36,11 @@ $highlight = #e4f7f9 !default;
 .tooltip p:last-child {
 	margin: 0;
 }
+
+.js-hasfocus .tooltip {
+	opacity: 1;
+}
+
 
 // move tooltips to the top if a narrow display
 @media only screen and (max-width: 750px) {
@@ -60,6 +65,3 @@ $highlight = #e4f7f9 !default;
 	}
 }
 
-.js-hasfocus .tooltip {
-	opacity: 1;
-}
