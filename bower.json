@@ -1,0 +1,33 @@
+{
+  "name": "form-tooltips",
+  "homepage": "https://github.com/jameswragg/form-tooltips",
+  "_release": "dda2e6cfd2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "dda2e6cfd2d200a3e4095316f25a8e2a6fbffc46"
+  },
+  "_source": "git://github.com/jameswragg/form-tooltips.git",
+  "_target": "*",
+  "_originalSource": "jameswragg/form-tooltips",
+  "_direct": true,
+  "version": "0.1.1",
+  "description": "Simple form control tooltips on focus",
+  "main": "tooltips.js",
+  "keywords": [
+    "forms",
+    "tooltips"
+  ],
+  "authors": [
+    "James Wragg"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
