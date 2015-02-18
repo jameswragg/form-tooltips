@@ -11,7 +11,6 @@
   "_target": "*",
   "_originalSource": "jameswragg/form-tooltips",
   "_direct": true,
-  "version": "0.1.1",
   "description": "Simple form control tooltips on focus",
   "main": "tooltips.js",
   "keywords": [

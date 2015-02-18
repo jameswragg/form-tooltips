@@ -14,7 +14,7 @@
         function init(){
             console.time('Tooltips Init');
 
-            $('input, textarea').each(function(el) {
+            $('input, textarea, select').each(function(el) {
 
                 var $this = $(this),
                     $container = $(this).parents('.field').first(),
