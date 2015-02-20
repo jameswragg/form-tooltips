@@ -37,22 +37,48 @@ $highlight: #e4f7f9 !default;
 	margin: 0;
 }
 
-.js-hasfocus .tooltip {
+.hasfocus .tooltip {
 	opacity: 1;
 }
 
-.js-hasfocus:before {
-	content: "";
-	display: block !important;
+
+
+//
+// PREFFERED APPROACH
+// however there's an issue in FF that means you can't select the contents of text
+// inputs on the initial mousedown.
+//
+// .hasfocus:before {
+// 	content: " ";
+// 	display: block !important;
+// 	background: rgba(255, 255, 0, 0.25);
+// 	position: absolute;
+// 	z-index:0;
+// 	top: -10px;
+// 	left: -10px;
+// 	right: -10px;
+// 	bottom: -10px;
+// 	border: 1px solid rgba(255, 255, 0, 0.5);
+// 	border-radius: 3px;
+// }
+//
+// ALTERNATIVE APPROACH
+.field.hasfocus {
+	$highlight-padding: 10px;
+	$border-width: 1px;
+
 	background: rgba(255, 255, 0, 0.25);
-	position: absolute;
-	top: -10px;
-	left: -10px;
-	right: -10px;
-	bottom: -10px;
-	border: 1px solid rgba(255, 255, 0, 0.5);
+	position: relative;
+	top: -($highlight-padding+$border-width);
+	margin-left: -($highlight-padding+$border-width);
+	margin-right: -($highlight-padding);
+	margin-bottom: -10px;
+	padding: $highlight-padding $highlight-padding;
 	border-radius: 3px;
+	border: $border-width solid rgba(255, 255, 0, 0.5);
 }
+
+
 
 // move tooltips to the top if a narrow display
 @media only screen and (max-width: 750px) {

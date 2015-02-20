@@ -8,7 +8,7 @@
     MDGX.Tooltips = (function(){
 
         var Tooltips = {},
-            className = 'js-hasfocus';
+            className = 'hasfocus';
 
 
         function init(){
@@ -28,7 +28,8 @@
                     $tip.css('top', $this.position().top);
                     $container.addClass(className);
 
-                }).on('blur', function(e) {
+                })
+                .on('blur', function(e) {
                     $container.removeClass(className);
                 });
 
