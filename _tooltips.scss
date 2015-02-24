@@ -1,6 +1,6 @@
 $highlight: #e4f7f9 !default;
 
-.tooltip {
+.form__tooltip {
 	display: block;
 	min-height: 36px;
 	padding: 20px;
@@ -14,7 +14,7 @@ $highlight: #e4f7f9 !default;
 	border-radius: 4px;
 	pointer-events: none;
 }
-.js .tooltip {
+.js .form__tooltip {
 	position: absolute;
 	width: 300px;
 	right: -305px;
@@ -33,11 +33,11 @@ $highlight: #e4f7f9 !default;
 		border-bottom: 10px solid transparent;
 	}
 }
-.tooltip p:last-child {
+.form__tooltip p:last-child {
 	margin: 0;
 }
 
-.hasfocus .tooltip {
+.hasfocus .form__tooltip {
 	opacity: 1;
 }
 
@@ -63,7 +63,7 @@ $highlight: #e4f7f9 !default;
 // }
 //
 // ALTERNATIVE APPROACH
-.field.hasfocus {
+.form__field.hasfocus {
 	$highlight-padding: 10px;
 	$border-width: 1px;
 
@@ -82,7 +82,7 @@ $highlight: #e4f7f9 !default;
 
 // move tooltips to the top if a narrow display
 @media only screen and (max-width: 750px) {
-	.js .tooltip {
+	.js .form__tooltip {
 		-webkit-transform: translateY(100%);
 		transform: translateY(100%);
 		left: 0;
