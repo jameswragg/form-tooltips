@@ -8,7 +8,8 @@
     MDGX.Tooltips = (function(){
 
         var Tooltips = {},
-            className = 'hasfocus';
+            className = 'hasfocus',
+            containerSelector = '.form__field';
 
 
         function init(){
@@ -17,8 +18,8 @@
             $('input, textarea, select').each(function(el) {
 
                 var $this = $(this),
-                    $container = $(this).parents('.field').first(),
-                    $tip = $container.find('.tooltip').eq(0),
+                    $container = $(this).parents(containerSelector).first(),
+                    $tip = $container.find('.form__tooltip').eq(0),
                     availSpace;
 
                 $this.on('focus', function(e) {
