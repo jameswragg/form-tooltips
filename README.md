@@ -2,7 +2,7 @@
 Simple form control tooltips on focus
 
 ```
-<div class="field">
+<div class="form__field">
 	<label for="price">
 		Price
 	</label>
